@@ -9,7 +9,7 @@ RSpec.describe 'POST /api/orders' do
     post '/api/orders', params: { order: { product_id: 1, user_id: 1 } }
     end
 
-    it { is_expected.to have_http_status created }
+    it { is_expected.to have_http_status :created }
 
 end
 
