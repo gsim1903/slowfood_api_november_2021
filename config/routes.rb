@@ -1,9 +1,5 @@
-# Rails.application.routes.draw do
-#   namespace :api do
-#     end
-#   end
-# end
-
-
-
-# #  constraints: { format: 'json' }
+Rails.application.routes.draw do
+   namespace :api do
+    resources :orders, only: [:create]
+  end
+end
